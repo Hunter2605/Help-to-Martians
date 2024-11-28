@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83bb230d-66e6-4a08-9d19-90e64c59fd5b" name="Changes" comment="add new method">
+    <list default="true" id="83bb230d-66e6-4a08-9d19-90e64c59fd5b" name="Changes" comment="changed main">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,6 +15,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
@@ -55,7 +59,7 @@
       <option name="presentableId" value="Default" />
       <updated>1732542050985</updated>
       <workItem from="1732542052034" duration="252000" />
-      <workItem from="1732769354103" duration="1684000" />
+      <workItem from="1732769354103" duration="2990000" />
     </task>
     <task id="LOCAL-00001" summary="First &quot;sketch&quot;">
       <option name="closed" value="true" />
@@ -81,7 +85,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732770786519</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="changed main">
+      <option name="closed" value="true" />
+      <created>1732771123718</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1732771123718</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -101,6 +113,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First &quot;sketch&quot;" />
     <MESSAGE value="add new method" />
-    <option name="LAST_COMMIT_MESSAGE" value="add new method" />
+    <MESSAGE value="changed main" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed main" />
   </component>
 </project>
