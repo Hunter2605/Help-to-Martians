@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="83bb230d-66e6-4a08-9d19-90e64c59fd5b" name="Changes" comment="First &quot;sketch&quot;">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Martians.iml" afterDir="false" />
+    <list default="true" id="83bb230d-66e6-4a08-9d19-90e64c59fd5b" name="Changes" comment="add new method">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,9 +15,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2pLOmZEshlBXwneN971RwQP4ciB" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -32,6 +30,10 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
@@ -53,6 +55,7 @@
       <option name="presentableId" value="Default" />
       <updated>1732542050985</updated>
       <workItem from="1732542052034" duration="252000" />
+      <workItem from="1732769354103" duration="1684000" />
     </task>
     <task id="LOCAL-00001" summary="First &quot;sketch&quot;">
       <option name="closed" value="true" />
@@ -62,7 +65,23 @@
       <option name="project" value="LOCAL" />
       <updated>1732542274953</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="First &quot;sketch&quot;">
+      <option name="closed" value="true" />
+      <created>1732769786910</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1732769786910</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add new method">
+      <option name="closed" value="true" />
+      <created>1732770786519</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1732770786519</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -81,6 +100,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First &quot;sketch&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="First &quot;sketch&quot;" />
+    <MESSAGE value="add new method" />
+    <option name="LAST_COMMIT_MESSAGE" value="add new method" />
   </component>
 </project>
