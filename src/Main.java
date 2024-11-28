@@ -13,6 +13,9 @@ public class Main {
             System.out.println(checkBoxes(locationOfBoxes, guesses));
             guesses.clear();
             attempts++;
+            if (attempts >= maxAttempts) {
+                RandomBoxes(locationOfBoxes);
+            }
         }
     }
     static void Guesses(ArrayList<Integer> guesses) {
@@ -41,6 +44,9 @@ public class Main {
             if (locationOfBoxes.contains(guesses.get(i))) {
                 correct++;
             }
+        }
+        if (correct == 3) {
+            System.out.println("You find all boxes");
         }
         return correct;
     }
