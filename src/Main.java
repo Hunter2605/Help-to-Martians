@@ -7,30 +7,26 @@ public class Main {
         ArrayList<Integer> locationOfBoxes = new ArrayList<>();
         int attempts = 0;
         int maxAttempts = 5;
-        RandomBoxes(locationOfBoxes);
-        while (attempts < maxAttempts) {
-            Guesses(guesses);
-            System.out.println(checkBoxes(locationOfBoxes, guesses));
-            guesses.clear();
-            attempts++;
-            if (attempts >= maxAttempts) {
-                RandomBoxes(locationOfBoxes);
-            }
-        }
+        Call(locationOfBoxes,guesses,attempts,maxAttempts);
     }
+
     static void Guesses(ArrayList<Integer> guesses) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Input 3 digits: ");
-        for (int i = 0; i < 3; i++) {
+        while (guesses.size() < 3) {
             int guess = sc.nextInt();
-            if (guess>7 || guess<0 ) {
+            if (guess >= 0 && guess <= 7) {
+                guesses.add(guess);
+            }
+            else {
                 System.out.println("Incorrect input. Try again, give an integer between 0 and 7.");
             }
-            guesses.add(guess);
         }
     }
+
     static void RandomBoxes(ArrayList<Integer> locationOfBoxes) {
         Random rand = new Random();
+        locationOfBoxes.clear();
         while (locationOfBoxes.size()<3) {
             int location = rand.nextInt(8);
             if (!locationOfBoxes.contains(location)) {
@@ -38,16 +34,47 @@ public class Main {
             }
         }
     }
+
     static int checkBoxes(ArrayList<Integer> locationOfBoxes, ArrayList<Integer> guesses) {
         int correct = 0;
-        for (int i = 0; i < 3; i++) {
-            if (locationOfBoxes.contains(guesses.get(i))) {
+        ArrayList<Integer> matchedBoxes = new ArrayList<>(); // Хранит найденные коробки
+
+        for (int guess : guesses) {
+            if (locationOfBoxes.contains(guess) && !matchedBoxes.contains(guess)) {
                 correct++;
+                matchedBoxes.add(guess); // Помечаем коробку как найденную
             }
         }
+
         if (correct == 3) {
-            System.out.println("You find all boxes");
+            System.out.println("You found all the boxes!");
+            System.exit(0);
         }
+
         return correct;
+    }
+
+    static void Call(ArrayList<Integer> locationOfBoxes, ArrayList<Integer> guesses, int attempts, int maxAttempts) {
+        RandomBoxes(locationOfBoxes);
+
+        while (true) {
+            while (attempts < maxAttempts) {
+                Guesses(guesses);
+                int correct = checkBoxes(locationOfBoxes, guesses);
+                System.out.println("Correct guesses: " + correct);
+                guesses.clear();
+                attempts++;
+
+                if (correct == 3) {
+                    System.out.println("Congratulations! You've won!");
+                    return;
+                }
+            }
+
+            System.out.println("The legs realized that boxes are being figured out.");
+            System.out.println("Legs changed location of boxes.");
+            RandomBoxes(locationOfBoxes);
+            attempts = 0;
+        }
     }
 }
